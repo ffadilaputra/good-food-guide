@@ -7,7 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "jss": "latest",
-    "react-jss": "latest"
-  }
+    "react-jss": "latest",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
